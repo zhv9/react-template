@@ -1,10 +1,10 @@
 import { Route, Switch } from 'react-router-dom';
-import ReactInfo from './containers/welcome-page/ReactInfo';
+import WelcomePage from './welcome-page';
 
 export function Routes() {
   return (
     <Switch>
-      <Route path="/" component={ReactInfo} />
+      <Route path="/" component={WelcomePage} />
     </Switch>
   );
 }

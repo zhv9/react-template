@@ -1,20 +1,16 @@
+import React from 'react';
+import { useIntl } from '../../intl';
 import logo from './logo.svg';
 import './ReactInfo.css';
 
 function ReactInfo() {
+  const intl = useIntl();
   return (
     <div className="React">
       <header className="React-header">
         <img src={logo} className="React-logo" alt="logo" />
-        <p>
-          Edit <code>src/*.tsx</code> and save to reload.
-        </p>
-        <a
-          className="React-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <p>{intl.get('edit_and_save_to_reload', { code: 'src/*.tsx' })}</p>
+        <a className="React-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
       </header>
