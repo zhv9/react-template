@@ -3,12 +3,7 @@ import { useEffect, useState } from 'react';
 import intl from 'react-intl-universal';
 import { LocaleKey } from './config';
 
-interface Intl {
-  get(key: IntlKey, variables?: any): string;
-  getHTML(key: IntlKey, value?: any): string;
-}
-
-export function useIntl(): Intl {
+export function useSimpleIntl(): Intl {
   return intl;
 }
 
@@ -16,7 +11,7 @@ type Props = {
   children?: JSX.Element | JSX.Element[];
 };
 
-export function IntlProvider({ children }: Props) {
+export function useCurrentLocale() {
   const currentLocale = intl.determineLocale({
     urlLocaleKey: 'lang',
     localStorageLocaleKey: 'lang',
@@ -35,6 +30,10 @@ export function IntlProvider({ children }: Props) {
         .then(() => setLocale(currentLocale));
     });
   }, [currentLocale]);
+  return locale;
+}
 
+export function IntlSimpleProvider({ children }: Props) {
+  const locale = useCurrentLocale();
   return <>{locale ? children : null}</>;
 }

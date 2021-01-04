@@ -1,15 +1,26 @@
 import React from 'react';
-import { IntlProvider } from '../../intl';
+import { IntlSimpleProvider, IntlContextProvider } from '../../intl';
 import ReactInfo from './ReactInfo';
-import { SelectLanguage } from './SelectLanguage';
+import { SelectLanguageSimple, SelectLanguageByAction } from './SelectLanguage';
 
 export function WelcomePage() {
   return (
     <>
-      <IntlProvider>
-        <SelectLanguage />
+      <IntlSimpleProvider>
+        <SelectLanguageSimple />
         <ReactInfo />
-      </IntlProvider>
+      </IntlSimpleProvider>
+    </>
+  );
+}
+
+export function WelcomeContextPage() {
+  return (
+    <>
+      <IntlContextProvider>
+        <SelectLanguageByAction />
+        <ReactInfo />
+      </IntlContextProvider>
     </>
   );
 }
