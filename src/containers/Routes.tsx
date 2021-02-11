@@ -1,6 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import WelcomePage from './welcome-page';
-import { WelcomeContextPage } from './welcome-page/WelcomePage';
+import { WelcomePage, WelcomeContextPage } from './welcome_page';
 
 export function Routes() {
   return (

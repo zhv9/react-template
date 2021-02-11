@@ -1,7 +1,7 @@
 import React from 'react';
 import intl from 'react-intl-universal';
-import { useCurrentLocale } from './intlSimpleProvider';
-import { initIntl, setLocaleActionMap, SET_LOCALE } from './IntlContextActions';
+import { useCurrentLocale } from './intl_simple_provider';
+import { initIntl, setLocaleActionMap, SET_LOCALE } from './intl_context_actions';
 
 const intlActionMap = {
   ...setLocaleActionMap,

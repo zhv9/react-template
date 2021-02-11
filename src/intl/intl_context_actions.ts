@@ -1,8 +1,8 @@
 import axios from 'axios';
 import intl from 'react-intl-universal';
 import { LocaleKey } from './config';
-import { allContents } from './intlContents';
-import { Dispatch, IntlStore } from './IntlContextProvider';
+import { allContents } from './intl_contents';
+import { Dispatch, IntlStore } from './intl_context_provider';
 
 export const SET_LOCALE = Symbol('SET_LOCALE');
 

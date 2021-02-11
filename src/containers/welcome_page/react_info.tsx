@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from '../../intl';
 import logo from './logo.svg';
-import './ReactInfo.css';
+import './react_info.css';
 
 function ReactInfo() {
   const intl = useIntl();

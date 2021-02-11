@@ -1,5 +1,5 @@
-import { useIntlState } from './IntlContextProvider';
-import { useSimpleIntl } from './intlSimpleProvider';
+import { useIntlState } from './intl_context_provider';
+import { useSimpleIntl } from './intl_simple_provider';
 
 export function useIntl() {
   const intl = useSimpleIntl();

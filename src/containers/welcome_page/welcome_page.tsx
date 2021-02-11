@@ -1,7 +1,7 @@
 import React from 'react';
 import { IntlSimpleProvider, IntlContextProvider } from '../../intl';
-import ReactInfo from './ReactInfo';
-import { SelectLanguageSimple, SelectLanguageByAction } from './SelectLanguage';
+import ReactInfo from './react_info';
+import { SelectLanguageSimple, SelectLanguageByAction } from './select_language';
 
 export function WelcomePage() {
   return (

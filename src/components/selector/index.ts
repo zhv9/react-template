@@ -1,3 +1,3 @@
-import { NativeSelect } from './NativeSelect';
+import { NativeSelect } from './native_select';
 
 export { NativeSelect };
