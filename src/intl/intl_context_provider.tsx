@@ -12,7 +12,8 @@ const initIntlStore = {
 };
 
 export function intlReducer(state: IntlStore = initIntlStore, action: Action) {
-  return intlActionMap[action.type](state);
+  const reducer = intlActionMap[action.type];
+  return reducer ? reducer(state) : state;
 }
 
 export type IntlStore = { intl: typeof intl };

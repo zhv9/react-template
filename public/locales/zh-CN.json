@@ -1,3 +1,10 @@
 {
-  "edit_and_save_to_reload": "修改 <code>{code}</code> 并且保存以重新加载。"
+  "edit_and_save_to_reload": "修改 <code>{code}</code> 并且保存以重新加载。",
+  "summary": "待办摘要",
+  "content": "待办内容",
+  "submit": "提交",
+  "close": "关闭",
+  "add_todo": "添加待办",
+  "start_date": "开始时间",
+  "due_date": "到期时间"
 }
