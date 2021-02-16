@@ -1,0 +1,27 @@
+.simple-table {
+  border: 0.1rem;
+  padding: 1rem;
+  border-spacing: 0;
+}
+
+.simple-table table,
+th,
+td {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.simple-table th,
+td {
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.simple-table th:last-child,
+td:last-child {
+  border-right-width: 0;
+}
+
+.simple-table tr:last-child td {
+  border-bottom-width: 0;
+}

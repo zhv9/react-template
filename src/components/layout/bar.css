@@ -1,0 +1,22 @@
+.bar-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left-container {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.right-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
