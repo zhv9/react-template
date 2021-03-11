@@ -9,11 +9,11 @@ export function getTodoStore(storeState: RootStore) {
 
 export function useTodoDetail(
   todoItemKey: Exclude<keyof ITodo, 'id'>,
-): [string, (itemContent: string) => (dispatch: TodoDispatchType) => TodoActions] {
+): readonly [string, (itemContent: string) => (dispatch: TodoDispatchType) => TodoActions] {
   const todoDetail = useSelector((storeState: RootStore) => getTodoStore(storeState)?.todoDetail);
   const dispatch = useDispatch();
   const setItem = (itemContent: string) => {
     return dispatch(setTodo({ ...todoDetail, [todoItemKey]: itemContent }));
   };
-  return [todoDetail[todoItemKey] || '', setItem];
+  return [todoDetail[todoItemKey] || '', setItem] as const;
 }
