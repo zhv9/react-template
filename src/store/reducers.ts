@@ -9,7 +9,7 @@ export type RootStore = {
   [TODO_STORE]: TodoStore;
 };
 
-const rootStore = {
+export const rootStore = {
   [INTL_KEY]: intlReducer,
   [TODO_STORE]: todoReducer,
 };
